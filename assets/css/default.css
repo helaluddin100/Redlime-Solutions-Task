@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+    font-family: "Uber Move";
+    src: url("../font/custom/UberMove-Bold.eot");
+    src: local("UberMoveBold"), local("UberMove-Bold"), url("../font/custom/UberMove-Bold.eot?#iefix") format("embedded-opentype"), url("../font/custom/UberMove-Bold.woff2") format("woff2"), url("../font/custom/UberMove-Bold.woff") format("woff"), url("../font/custom/UberMove-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Uber Move";
+    src: url("UberMove-Medium.eot");
+    src: local("UberMoveMedium"), local("UberMove-Medium"), url("../font/custom/UberMove-Medium.eot?#iefix") format("embedded-opentype"), url("../font/custom/UberMove-Medium.woff2") format("woff2"), url("../font/custom/UberMove-Medium.woff") format("woff"), url("../font/custom/UberMove-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+    /*========== Colors ==========*/
+    --main-color: #0fc500;
+    --second-color: #0376f9;
+    --black-color: #000000;
+    --title-color: #393939;
+    --white-color: #ffffff;
+    --text-color: #3a494e;
+    /*========== Font and typography ==========*/
+    --body-font: "Montserrat", sans-serif;
+    --title-font: "Uber Move";
+    --sec-title-font: 25px;
+    --p-font: 20px;
+    --m-title: 30.25px;
+    --l-title: 36.79px;
+    --p-font-height: 24px;
+    --lp-font-height: 25px;
+    --title-font: 40px;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== Margin ==========*/
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+
+/* ==================CSS Variable END========= */
+
+
+/*========== BASE ==========*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--p-font);
+    font-weight: 400;
+    font-family: "Uber Move";
+    line-height: var(--p-font-height);
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+img {
+    vertical-align: middle;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* ============================GENERAL STYLE END======= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+span,
+label {
+    margin: 0;
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+table.table {
+    white-space: nowrap;
+}
+
+.custom-btn {
+    background: var(--main-gradient);
+    padding: 6px 20px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-color);
+    transition: all 0.3s ease 0s;
+    border: 2px solid var(--main-color);
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    background: var(--main-color);
+}
+
+.custom-btn:hover {
+    background: none;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.btn:focus {
+    outline: 0px;
+    box-shadow: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.from-submit {
+    display: flex;
+    justify-content: end;
+}
